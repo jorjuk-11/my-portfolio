@@ -1,0 +1,78 @@
+/*
+Theme Name: my-portfolio
+Theme URI: URL вашей темы
+Description: Образцы работ по верстке сайтов
+Author: Сергей Кирюшин
+Author URI: URL автора
+Version: Версия темы 6.4.3.
+*/
+
+@import url('style/nav.css');
+@import url('style/slider.css');
+@import url('style/content.css');
+@import url('style/contact_form.css');
+@import url('style/footer.css');
+
+@font-face {font-family:'Gudea-Regular'; src: url(../fonts/Gudea-Regular.ttf);}
+@font-face {font-family:'Raleway-Thin'; src: url(../fonts/Raleway-Thin.ttf);}
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html { height: 100%; }
+
+body { font: 18px Arial, Helvetica, Tahoma, sans-serif; background: #fff; }
+
+#wrapper {
+  max-width: 1920px;
+  height: 1200px;
+  text-align: center;
+}
+.wrap {
+    background: rgba(250, 250, 250, 0.9);
+    border: 1px #383838 solid;
+    max-width: 1200px;
+    margin: 0 auto 6% auto;
+    padding: 20px;
+    text-align: center;
+}
+h1 {  }
+
+h2 { line-height: 0px; letter-spacing: 0px; }
+
+h3 { color: #383838; }
+
+p { color: #383838; font-style: italic; line-height: 2em; }
+
+li { list-style-type: none; /* Убираем маркеры */ }
+
+img { max-width: 100%; height: auto; }
+
+a { text-decoration:none; }
+
+a:hover { text-decoration:underline; }
+
+/***** Forms *****/
+
+form { margin:0; padding:0; display:inline; }
+
+form input,
+form select,
+form textarea {font:1em Arial, Helvetica, sans-serif;}
+form textarea { width:120%; line-height:1.25;}
+form label {cursor:pointer;}
+
+
+/**************** #wrap *******************/
+.logo {
+  position: fixed;
+  margin: .1% 1%;
+  z-index: 2;
+}

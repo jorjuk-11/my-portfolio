@@ -1,0 +1,128 @@
+footer {
+	background: rgba(250, 250, 250, 0.9);
+	border: 1px #383838 solid;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+.wrap_foot {
+	max-width: 1600px;
+}
+.menu_foot {
+	display: flex;
+    justify-content: space-between;
+    flex-basis: 78%;
+}
+.mail {
+	flex-basis: 100%;
+	display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+footer a {
+	color: #383838;
+}
+footer a:hover {
+	color: #000 !important;
+}
+ul.menu_foot  > li{
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 0;
+}
+ul.menu_foot > li a{
+  display: block;
+  padding: 18px 30px;
+  color: #383838;
+  text-decoration: none;
+  position: relative;
+}
+ul.menu_foot  > li a:before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -2%;
+  border-left: 2px solid #383838; 
+  width: 1px;
+  height: 16px;
+  margin-top: -8px;
+}
+ul.menu_foot  > li:first-child a:before{
+  border-left: none;
+}
+/* --------------------------------------*/
+.submit { margin-left: 0; }
+.send { margin-left: 130%; }
+/* --------------------------------------*/
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    pointer-events: none; /* добавляем это */
+}
+/* Стили для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Стили для кнопки закрытия модального окна */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form { padding: 6px; border-radius: 6px; margin-top: -2%; margin-left: 1%; }
+
+.clear1 { margin-left: 65%; }
+
+#description { width: 100%; height: 200px; }
+.overlay {
+    /* Остальные стили */
+    z-index: 999; /* Устанавливаем нижний индекс для фона затемнения */
+}
+
+.modal {
+    /* Остальные стили */
+    z-index: 1000; /* Устанавливаем высокий индекс для модального окна */
+}
+/* -------------- Media ---------------- */
+@media only screen and (max-width: 600px){
+.menu_foot {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 78%;
+}
+}

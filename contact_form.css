@@ -1,0 +1,33 @@
+/* --------------------------- Contact_form ----------------------------- */
+.contact_form_bottom {display: flex;justify-content: center;flex-wrap: wrap;}
+.text_form {flex-basis: 51%;}
+.contact_form_bottom h1 {color: #383838;}
+.form_info {flex-basis: 52%;position:relative;font-weight: 100;font-size:14px;line-height: 27px;font-family:'OpenSans-Regular', Arial;width: 100%;}
+.contact_form .adress {display: flex;justify-content: flex-start;flex-wrap: wrap;}
+.contact_form .adress_info input {background:#fff;border: 1px #383838 solid;margin: 10px 0;height: 50px;
+width: 100%; padding: 0 15px}
+::-webkit-input-placeholder {color:#737272;transition: all 1s;}
+::-moz-placeholder          {color:#737272;transition: all 1s;}/* Firefox 19+ */
+:-moz-placeholder           {color:#737272;transition: all 1s;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#737272;transition: all 1s;}
+
+:hover::-webkit-input-placeholder {color:transparent;}
+:hover::-moz-placeholder          {color:transparent;}/* Firefox 19+ */
+:hover:-moz-placeholder           {color:transparent;}/* Firefox 18- */
+:hover:-ms-input-placeholder      {color:transparent;}
+.contact_form:hover, .contact_form input:hover {cursor: pointer;transition: all 1c;}
+.contact_form input:focus {border: 1 px rgba(95, 94, 94, .71) solid;cursor: pointer;}
+.contact_form label {width: 150px;display: inline-block;float: left;padding: 3px;position: absolute;
+ top: 49%;left: -7%;}
+/* -------------------------------------- */
+textarea {border: 1px #383838 solid;margin-top: 8px;width: 100%; padding-left: 15px;}
+textarea:focus::placeholder {opacity: 0;}
+.clear {border-radius: 6px; margin-left: 0;}
+.clear a {color: #383838;padding: 10px 30px;}
+.send {border-radius: 6px; margin-left: 167%; top: 0px; position: relative;}
+.send a {color: #383838;padding: 10px 30px;}
+
+.social ul {display: flex;justify-content: center;}
+.social li {margin-right: 20px;}
+.social li:first-child {margin-left: 20px;}
+.fa:before {font-size: 24px;}

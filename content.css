@@ -1,0 +1,49 @@
+#main {
+	margin: 54% auto 6% auto;
+}
+.content h1 {
+	color: #383838;
+}
+.works h1 {
+	color: #383838;
+}
+.contact_form h1 {
+	color: #383838;
+}
+/* -------------------------------------- */
+.posts {
+    display: block;
+    column-count: 2; /* Разбиваем на две колонки */
+    column-gap: 2%; /* Устанавливаем нулевой промежуток между колонками */
+}
+
+.post-image {
+    break-inside: avoid-column; /* Запретить размещение блока на нескольких колонках */
+    margin-bottom: 20px; /* Добавляем небольшой отступ между изображениями */
+}
+
+/* ------------------ Media --------------------- */
+@media screen and (max-width: 1190px) { 
+  #main {
+	margin: 700px auto 6% auto;
+}
+}
+@media screen and (max-width: 1190px) { 
+  .post:first-child {
+	margin-right: 4%;
+}
+}
+@media screen and (max-width: 800px) { 
+  #main {
+	margin: 560px auto 6% auto;
+}
+}
+@media screen and (max-width: 600px) { 
+  #main {
+	margin: 460px auto 6% auto;
+}
+.post {
+	flex-basis: 100%;
+	margin-bottom: 80px;
+}
+}
